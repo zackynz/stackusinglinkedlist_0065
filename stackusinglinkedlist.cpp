@@ -15,5 +15,7 @@ public:
 
 // Stack class
 class Stack {
+private:
+    Node* topi; // Pointer to the top node of the stack
 
 };
