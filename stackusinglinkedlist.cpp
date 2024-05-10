@@ -6,7 +6,7 @@ using namespace std;
 class Node {
 public:
     int data;
-    Node*next;
+    Node* next;
 
     Node() {
         next = NULL;
@@ -32,9 +32,14 @@ public:
         cout << "Push value: " << value << endl;
         return value;
     }
-
-
-void pop(){
     
-}
+    
+    void pop() {
+    if (isEmpty()) {
+        cout << "Stack is empety." << endl;
+    }
+    cout << "Propped value: " << top->data << endl;
+    top = top->next;
+    
+    }
 };
