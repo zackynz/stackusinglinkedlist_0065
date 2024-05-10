@@ -80,7 +80,19 @@ int main() {
         cin >> choice;
 
         switch (choice) {
-            
+        case 1:
+            cout << "Enter the value to push: ";
+            cin >> value;
+            stack.push(value);
+            break;
+        case 2:
+            if (!stack.isEmpty()) {
+                stack.pop();
+            }
+            else {
+                cout << "Stack is empty. Cannot pop." << endl;
+            }
+            break
         }
     }
 }
